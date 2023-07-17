@@ -3,8 +3,8 @@ on:
   push:
     branches: 
       - master
-env:
-  env_vars: ${{ vars.OPENAI_API_KEY }}
+#env:
+  #env_vars: ${{ vars.OPENAI_API_KEY }}
 jobs:
   testing:
     runs-on: ubuntu-latest
