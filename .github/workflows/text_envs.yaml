@@ -14,5 +14,5 @@ jobs:
         run: |
           echo "Hello world"
           echo "${{ secrets.OPEN_AI_API_KEY }}"
-          export $OPEN_AI_API_KEY=secrets.OPEN_AI_API_KEY
+          export OPEN_AI_API_KEY="${{ secrets.OPEN_AI_API_KEY }}"
           echo $secrets.OPEN_AI_API_KEY
